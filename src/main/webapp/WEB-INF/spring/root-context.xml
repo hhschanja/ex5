@@ -5,4 +5,16 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 		
+		
+	<!-- dataSourse -->
+		<bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" id="dataSource">
+			<property name="username" value=""></property>
+			<property name="password" value=""></property>		
+		</bean>
+		
+		
+	<!-- connection, mapper 연결하는 놈 -->
+		
+		
+	<!-- DAO에서 쓸 놈 -->
 </beans>
