@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd"><!-- 이 xml은 mybatis xml이라는것을 선언해주는 부분이야 -->
+  
+  <mapper namespace="NoticeMapper">
+
+  	
+  </mapper>
