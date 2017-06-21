@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 		
@@ -23,4 +25,30 @@
 		<bean class="org.mybatis.spring.SqlSessionTemplate"> <!-- DAO에서 필요한 애는 얘가 되는거지 -->
 			<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactoryBean"></constructor-arg>
 		</bean>
+		
+	<!-- multipart는 다 쪼개져서 날아가는거야 -->
+	<!-- 쪼개진 파일을 합쳐주는 놈의 객체를 만들어야해 -->
+	<bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver" id="multipartResolver">
+		<property name="defaultEncoding" value="UTF-8"></property>
+		
+		
+<!-- 	<property name="maxUploadSize"></property>파일들의 전체크기 -->
+<!--	<property name="maxUploadSizePerFile"></property>파일 하나당 크기 -->
+	</bean>
+	
+	
+	
+	
+		<!-- 컨트롤러 서비스 레포지터리 등 4가지를 스캔하는데 빼줄건 빼주면돼 -->
+
+	<context:component-scan base-package="com.choa.member.teacher" use-default-filters="true">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
+	
+	<context:component-scan base-package="com.choa.member.student" annotation-config="true">
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
+
+<!-- member는 상속용이니까 스캔할 필요가 없지 -->
+	
 </beans>

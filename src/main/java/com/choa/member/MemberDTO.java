@@ -1,7 +1,6 @@
 package com.choa.member;
 
 public class MemberDTO {
-	
 	private String id;
 	private String pw;
 	private String name;
@@ -9,6 +8,7 @@ public class MemberDTO {
 	private String grade;
 	private String filename;
 	private String oriname;
+	
 	public String getId() {
 		return id;
 	}
@@ -51,8 +51,7 @@ public class MemberDTO {
 	public void setOriname(String oriname) {
 		this.oriname = oriname;
 	}
-	
-	
+
 	
 	
 }
