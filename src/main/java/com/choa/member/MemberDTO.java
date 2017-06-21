@@ -5,7 +5,7 @@ public class MemberDTO {
 	private String id;
 	private String pw;
 	private String name;
-	private int age;
+	private Integer age;
 	private String grade;
 	private String fileName;
 	private String oriName;
