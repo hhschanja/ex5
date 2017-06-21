@@ -7,8 +7,8 @@ public class MemberDTO {
 	private String name;
 	private Integer age;
 	private String grade;
-	private String fileName;
-	private String oriName;
+	private String filename;
+	private String oriname;
 	public String getId() {
 		return id;
 	}
@@ -18,7 +18,7 @@ public class MemberDTO {
 	public String getPw() {
 		return pw;
 	}
-	public void setPw(String pw) { 
+	public void setPw(String pw) {
 		this.pw = pw;
 	}
 	public String getName() {
@@ -27,10 +27,10 @@ public class MemberDTO {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getAge() {
+	public Integer getAge() {
 		return age;
 	}
-	public void setAge(int age) {
+	public void setAge(Integer age) {
 		this.age = age;
 	}
 	public String getGrade() {
@@ -39,18 +39,19 @@ public class MemberDTO {
 	public void setGrade(String grade) {
 		this.grade = grade;
 	}
-	public String getFileName() {
-		return fileName;
+	public String getFilename() {
+		return filename;
 	}
-	public void setFileName(String fileName) {
-		this.fileName = fileName;
+	public void setFilename(String filename) {
+		this.filename = filename;
 	}
-	public String getOriName() {
-		return oriName;
+	public String getOriname() {
+		return oriname;
 	}
-	public void setOriName(String oriName) {
-		this.oriName = oriName;
+	public void setOriname(String oriname) {
+		this.oriname = oriname;
 	}
+	
 	
 	
 	
