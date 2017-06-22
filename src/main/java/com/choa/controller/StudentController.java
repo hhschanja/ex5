@@ -30,7 +30,7 @@ public class StudentController {
 	@RequestMapping(value="studentJoin",method=RequestMethod.POST)
 	public String studentJoin(StudentDTO studentDTO,Model model) throws Exception{ //studentDTO로 받아야 student 필드를 받잖아
 		System.out.println("student");
-		int result = studentServiceImpl.memberJoin(studentDTO);
+		int result = studentServiceImpl.memberJoin(memberDTO, session);
 		
 		String message = "가입 실패";
 		if(result>0){

@@ -5,7 +5,7 @@
   
   <mapper namespace="MemberMapper">
   
-  	<insert id="joinMember" parameterType="com.choa.member.MemberDTO"> <!-- memberDTO로~ -->
+  	<insert id="memberJoin" parameterType="com.choa.member.MemberDTO"> <!-- memberDTO로~ -->
   		insert into member values(#{id},#{pw},#{name},#{age},#{grade},#{filename},#{oriname})
   	</insert>
   	

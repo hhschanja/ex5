@@ -30,9 +30,7 @@ public class StudentDAOImplTest extends MyAbstract{
 	@Test
 	public void test4() throws Exception{
 		
-		int result = studentServiceImpl.memberJoin(studentDTO);
-		
-		assertEquals(1, result);
+
 	}
 	
 	@BeforeClass
@@ -45,7 +43,6 @@ public class StudentDAOImplTest extends MyAbstract{
 		studentDTO.setGrade("R3");
 		studentDTO.setFilename("ItsREAL33");
 		studentDTO.setOriname("ItsREAL33");
-		studentDTO.setSid("ItsREAL33");
 		studentDTO.setPhone("ItsREAL33");
 		studentDTO.setTid("ItsREAL33");
 	}

@@ -4,16 +4,9 @@ import com.choa.member.MemberDTO;
 
 public class StudentDTO extends MemberDTO{
 
-	private String sid;
 	private String phone;
 	private String tid;
 	
-	public String getSid() {
-		return sid;
-	}
-	public void setSid(String sid) {
-		this.sid = sid;
-	}
 	public String getPhone() {
 		return phone;
 	}

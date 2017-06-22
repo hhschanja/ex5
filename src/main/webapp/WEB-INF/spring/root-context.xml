@@ -37,8 +37,6 @@
 	</bean>
 	
 	
-	
-	
 		<!-- 컨트롤러 서비스 레포지터리 등 4가지를 스캔하는데 빼줄건 빼주면돼 -->
 
 	<context:component-scan base-package="com.choa.member.teacher" use-default-filters="true">

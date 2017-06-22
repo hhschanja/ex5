@@ -5,8 +5,14 @@
   
   <mapper namespace="TeacherMapper">
   
-	<insert id="joinTeacher" parameterType="com.choa.member.teacher.TeacherDTO">
-		insert into teacher values(#{tid},#{subject},#{hiredate})
+  
+  	<insert id="teacherJoin" parameterType="com.choa.member.teacher.TeacherDTO">
+		insert into teacher values(#{id},#{subject},#{hiredate})
 	</insert>
+	
+   	<select id="teacherLogin" parameterType="com.choa.member.MemberDTO" resultType="com.choa.member.student.TeacherDTO">
+ 		select M.id,M.name,M.AGE,M.filename,M.grade,M.oriname,M.pw,T.subject,T.hiredate from member M, teacher T where M.id = #{id} and M.pw = #{pw} and M.id=T.tid
+ 	</select>
+  
 
   </mapper>

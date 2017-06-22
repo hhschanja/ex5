@@ -1,13 +1,22 @@
 package com.choa.member;
 
+import org.springframework.web.multipart.MultipartFile;
+
 public class MemberDTO {
 	private String id;
 	private String pw;
 	private String name;
 	private Integer age;
 	private String grade;
+	public MultipartFile getF1() {
+		return f1;
+	}
+	public void setF1(MultipartFile f1) {
+		this.f1 = f1;
+	}
 	private String filename;
 	private String oriname;
+	private MultipartFile f1; //파라미터 이름과 동일하게 잡아야함
 	
 	public String getId() {
 		return id;

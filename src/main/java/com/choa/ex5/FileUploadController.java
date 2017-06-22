@@ -73,7 +73,8 @@ public class FileUploadController {
 		String originName = fileDTO.getF1().getOriginalFilename();
 		byte [] fileData = fileDTO.getF1().getBytes();
 		
-		fs.fileSave(path, originName, fileData);
+		String fileName = fs.fileSave(path,fileDTO.getF1());
+		
 	}
 	
 	

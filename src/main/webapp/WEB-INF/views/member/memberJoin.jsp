@@ -40,7 +40,6 @@ visibility: visible;
 </div>
 
 <div id="here">
-<p>sid:<input type="text" name="sid"></p>
 <p>전화번호:<input type="text" name="phone"></p>
 <p>선생번호:<input type="text" name="tid"></p>
 </div>
@@ -74,9 +73,9 @@ visibility: visible;
 		var v = $(this).attr('value');
 		
 		if(v=='student'){
-			$('#here').html('<p>sid:<input type="text" name="sid"></p><p>전화번호:<input type="text" name="phone"></p><p>선생번호:<input type="text" name="tid"></p>'); 
+			$('#here').html('<p>전화번호:<input type="text" name="phone"></p><p>선생번호:<input type="text" name="tid"></p>'); 
 		}else{
-			$('#here').html('<p>tid:<input type="text" name="tid"></p><p>과목:<input type="text" name="subject"></p><p>입사일:<input type="date" name="hiredate"></p>');
+			$('#here').html('<p>과목:<input type="text" name="subject"></p><p>입사일:<input type="date" name="hiredate"></p>');
 		}
 			
 	})

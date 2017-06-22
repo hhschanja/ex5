@@ -6,16 +6,9 @@ import com.choa.member.MemberDTO;
 
 public class TeacherDTO extends MemberDTO{
 
-	private String tid;
 	private String subject;
 	private Date hiredate;
 	
-	public String getTid() {
-		return tid;
-	}
-	public void setTid(String tid) {
-		this.tid = tid;
-	}
 	public String getSubject() {
 		return subject;
 	}

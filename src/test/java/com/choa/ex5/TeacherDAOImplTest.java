@@ -26,17 +26,13 @@ public class TeacherDAOImplTest extends MyAbstract{
 
 	public void test() throws Exception{
 		
-		int result = teacherDAOImpl.memberJoin(teacherDTO);
 
-		assertEquals(1, result);
 	}
 	
 	@Test	
 	public void test3() throws Exception{
 		
-		int result = teacherServiceImpl.memberJoin(teacherDTO);
 
-		assertEquals(1, result);
 	}
 	
 
@@ -52,7 +48,6 @@ public class TeacherDAOImplTest extends MyAbstract{
 		teacherDTO.setFilename(data);
 		teacherDTO.setOriname(data);
 		teacherDTO.setSubject(data);
-		teacherDTO.setTid(data);
 		teacherDTO.setHiredate(Date.valueOf("2017-06-20"));
 		
 	}
